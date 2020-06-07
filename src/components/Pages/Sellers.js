@@ -51,7 +51,7 @@ class Sellers extends React.Component {
             </div>
             <div class="ui divider"></div>
         <div>
-          <SellersList />
+          <SellersList sellers={this.props.sellers} />
         </div>
       </div>
     );

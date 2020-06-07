@@ -2,6 +2,7 @@ import React from "react"
 import "./Footer.css"
 const Footer= () => {
     return (
+        <>
         <div className="footer">
             <div className="list-item">
                 <ul>
@@ -38,6 +39,10 @@ const Footer= () => {
                 </ul>
             </div>
         </div>
+        <div className="footeroffooter">
+            Developed by <a style={{color:"white",textDecoration:"underline"}} href="https://karanrandhir.netlify.app/"> Karan Randhir</a>
+        </div>
+        </>
     )
 }
 export default Footer;

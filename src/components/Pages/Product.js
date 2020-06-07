@@ -8,13 +8,18 @@ import Seller from "../Seller"
 import pic from "../../assets/mobile.jfif"
 import Tabs from "../Tabs"
 import { render } from "@testing-library/react"
-import {fetchProduct} from "../../actions"
+import {fetchProduct,fetchSellers} from "../../actions"
 import { connect } from "react-redux";
 import Footer from "../Footer"
 class Product extends React.Component {
     componentDidMount(){
-        if(Object.keys(this.props.product).length===0){
-        this.props.fetchProduct(12,9,6);}
+        if (Object.keys(this.props.product).length === 0) {
+            this.props.fetchProduct(12, 9, 6);
+          }
+          if (Object.keys(this.props.sellers).length === 0) {
+            this.props.fetchSellers(9, 6);
+          }
+        
     }
     render() {
         console.log(this.props.product)
@@ -52,7 +57,8 @@ class Product extends React.Component {
     )}
 }
 const mapStateToProps = (state)=> {
-    return {product:state.product};
+    return {product:state.product,
+    sellers:state.sellers};
 }
 export default connect(mapStateToProps,
-    {fetchProduct})(Product); 
+    {fetchProduct,fetchSellers})(Product); 

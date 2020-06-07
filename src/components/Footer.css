@@ -23,6 +23,11 @@
     color: grey;
     margin-bottom: 1rem;
 }
+.footeroffooter{
+    background-color: steelblue;
+    color :whitesmoke;
+    text-align: center;
+}
 @media only screen and (max-width: 800px) {
     .footer{
         flex-direction: column;

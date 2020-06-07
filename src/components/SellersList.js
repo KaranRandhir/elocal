@@ -2,8 +2,8 @@ import React from "react"
 import SELLERS from "./SELLERDUMMY"
 import SellerListItem from "./SellerListItem"
 
-const SellersList = () => {
-    const sellers=SELLERS["otherSellerList"]
+const SellersList = (props) => {
+    const sellers=props.sellers["otherSellerList"]
     console.log(SELLERS)
     return (
         <div className="ui large relaxed list">
