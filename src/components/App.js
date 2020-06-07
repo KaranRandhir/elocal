@@ -15,10 +15,10 @@ const App = () => {
       <Router>
         
     <Switch>
-        
+        <Route path="/" exact component={Home}/>
         <Route path="/productdetail" exact component={Product}/>
         <Route path="/sellers"exact component={Sellers}/>
-        <Redirect to="/productdetail"/>
+        <Redirect to="/"/>
     </Switch>
     
   
