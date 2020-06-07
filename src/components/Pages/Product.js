@@ -10,7 +10,7 @@ import Tabs from "../Tabs"
 import { render } from "@testing-library/react"
 import {fetchProduct} from "../../actions"
 import { connect } from "react-redux";
-
+import Footer from "../Footer"
 class Product extends React.Component {
     componentDidMount(){
         if(Object.keys(this.props.product).length===0){
@@ -28,7 +28,7 @@ class Product extends React.Component {
         )
     }
         return (
-        
+        <>
         <div className="product">
         <div className="one">
         
@@ -44,8 +44,11 @@ class Product extends React.Component {
         <ProductInfo info={this.props.product}/>
         </div>
         <Tabs/>
+      
 
     </div>
+    <Footer/>
+    </>
     )}
 }
 const mapStateToProps = (state)=> {

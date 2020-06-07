@@ -21,12 +21,19 @@ class Sellers extends React.Component {
     if (
       Object.keys(this.props.product).length === 0 ||
       Object.keys(this.props.sellers).length === 0
-    )
-      return <div>loading</div>;
+    ){
+      return (
+        <div className="loading">
+        <div class="ui active dimmer">
+<div class="ui loader"></div>
+</div>
+    </div>
+      );}
 
     return (
       <div className="sellers-list">
         <div className="back">
+
           <Link to="/productDetail"> {`<`}back to product</Link>
           <ProductCard
             name={this.props.product["productDetail"]["productName"]}
@@ -37,6 +44,12 @@ class Sellers extends React.Component {
             }
           />
         </div>
+        
+        <div style={{display:"flex",justifyContent:"space-between",marginTop:"1rem",fontSize:"1.2rem",fontWeight:"bold"}}>
+            <div>Seller Details</div>
+            <div>Price</div>            
+            </div>
+            <div class="ui divider"></div>
         <div>
           <SellersList />
         </div>

@@ -6,7 +6,7 @@ const SellersList = () => {
     const sellers=SELLERS["otherSellerList"]
     console.log(SELLERS)
     return (
-        <div className="ui relaxed list">
+        <div className="ui large relaxed list">
        {sellers.map(item=><SellerListItem 
        name={item["sellerDetails"]["name"]} 
        place={item["sellerDetails"]["city"]} 
