@@ -1,0 +1,15 @@
+.mrpd{
+    color: gray;
+    font-size: 1rem;
+    text-decoration: line-through grey;
+}
+.elocal-price{
+    font-size: large;
+    font-weight: bold;
+}
+
+.list-discount{
+    color: orange;
+    font-size: large;
+    font-weight: bolder;
+}

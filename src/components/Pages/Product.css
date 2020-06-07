@@ -1,0 +1,39 @@
+.product{
+    width: 80vw;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.one{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.two{
+    display: flex;
+}
+
+.image-seller {
+    display: flex;
+    flex-direction: column;
+}
+.loading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1025px) {
+ .two{
+     flex-direction: column;
+ }
+ .product{
+     width: 90vw;
+ }
+}

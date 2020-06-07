@@ -1,0 +1,33 @@
+.feature{
+    display: flex;
+    width:fit-content;
+    padding: .3rem;
+}
+.borderstyle {
+    border:1.2px solid orange;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.feature__img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.feature__content {
+    margin-left: .3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature__content__light{
+    color: grey;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.feature__content__dark {
+    font-weight: bold;
+}

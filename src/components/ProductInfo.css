@@ -1,0 +1,62 @@
+.product-info{
+    width: 64vw;
+    margin-left: 2vw;
+    
+   
+}
+.product-info__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    
+}
+.product-info__features{
+    font-weight: 500;
+    color: grey;
+}
+
+.product-info__price {
+    margin-top: 3rem;
+
+}
+.elocals-price{
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+
+.discount {
+    color:orange;
+    font-size:2rem;
+    font-weight: bold;
+}
+.product-info__orange-buttons{
+    margin-top: 3rem;
+}
+
+.mrp{
+    color: gray;
+    font-size: 1.2rem;
+    text-decoration: line-through grey;
+}
+.product-info__blue-buttons{
+    margin-top: 2rem;
+}
+
+.calendar{
+    margin-top:.5rem;
+}
+
+.features {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1025px) {
+    
+    .product-info{
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 100%;
+    }
+   }
